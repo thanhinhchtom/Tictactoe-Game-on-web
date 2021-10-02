@@ -1,0 +1,67 @@
+#gameCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+#turn {
+    text-align: center;
+    font-size: 140px;
+    font-family: 'Antic Slab', serif;
+    color: darkgoldenrod;
+}
+
+#restart {
+    display: flex;
+    justify-content: center;
+}
+
+#restartbutton {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.body {
+    background-image: url("DEEC84.jpg")
+}
+
+.winning-message {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+}
+
+.winning-message button{
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.winning-message button:hover {
+    background-color: balck;
+    color: white;
+    border-color: white;
+}
+
+.winning-message.show{
+    display: none;
+}
